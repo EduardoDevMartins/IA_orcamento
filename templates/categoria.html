@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar Categoria</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Selecione a Categoria</h1>
+    <form method="POST" action="/">
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria">
+            <option value="Hidraulica">Hidráulica</option>
+            <option value="Eletrica">Elétrica</option>
+            <option value="Outras">Outras</option>
+        </select>
+        <button type="submit">Continuar</button>
+    </form>
+
+    <footer>
+        <p>© 2024 Refera</p>
+    </footer>
+</body>
+</html>
